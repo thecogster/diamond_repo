@@ -67,5 +67,5 @@ def test_check_missing_values():
     # check that file exists
     assert os.path.exists(datafile)
     dataset = pd.read_csv(datafile)
-    n_nan = np.sum(np.isnan(dataset.values))
+    n_nan = np.sum(pd.isnull(dataset.values))
     assert n_nan > 0
