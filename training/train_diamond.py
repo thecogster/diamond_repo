@@ -52,7 +52,7 @@ os.makedirs(outputs_folder, exist_ok=True)
 
 model_filename = "sklearn_diamonds_model.pkl"
 model_path = os.path.join(outputs_folder, model_filename)
-dump(reg, model_path)
+dump(clf, model_path)
 
 # upload the model file explicitly into artifacts
 print("Uploading the model into run artifacts...")
